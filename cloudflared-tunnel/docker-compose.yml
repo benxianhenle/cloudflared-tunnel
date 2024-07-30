@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cloudflared:
+    build: .
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    restart: always
